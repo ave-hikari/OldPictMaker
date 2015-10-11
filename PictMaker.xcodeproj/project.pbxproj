@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1844658D1B2D97C600D8808F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844658C1B2D97C600D8808F /* AppDelegate.swift */; };
+		1844658F1B2D97C600D8808F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844658E1B2D97C600D8808F /* ViewController.swift */; };
+		184465921B2D97C600D8808F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184465901B2D97C600D8808F /* Main.storyboard */; };
+		184465941B2D97C600D8808F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184465931B2D97C600D8808F /* Images.xcassets */; };
+		184465971B2D97C600D8808F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184465951B2D97C600D8808F /* LaunchScreen.xib */; };
+		184465A31B2D97C600D8808F /* StampMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184465A21B2D97C600D8808F /* StampMakerTests.swift */; };
+		2F0AA1C61BBD9CB6003227A7 /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AA1C51BBD9CB6003227A7 /* DrawViewController.xib */; };
+		2F0AA1C81BBD9E2C003227A7 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0AA1C71BBD9E2C003227A7 /* DrawViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1844659D1B2D97C600D8808F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1844657F1B2D97C600D8808F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184465861B2D97C600D8808F;
+			remoteInfo = StampMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184465871B2D97C600D8808F /* PictMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1844658B1B2D97C600D8808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1844658C1B2D97C600D8808F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1844658E1B2D97C600D8808F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		184465911B2D97C600D8808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184465931B2D97C600D8808F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		184465961B2D97C600D8808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1844659C1B2D97C600D8808F /* PictMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184465A11B2D97C600D8808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184465A21B2D97C600D8808F /* StampMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampMakerTests.swift; sourceTree = "<group>"; };
+		2F0AA1C51BBD9CB6003227A7 /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
+		2F0AA1C71BBD9E2C003227A7 /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184465841B2D97C600D8808F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184465991B2D97C600D8808F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1844657E1B2D97C600D8808F = {
+			isa = PBXGroup;
+			children = (
+				184465891B2D97C600D8808F /* PictMaker */,
+				1844659F1B2D97C600D8808F /* PictMakerTests */,
+				184465881B2D97C600D8808F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		184465881B2D97C600D8808F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				184465871B2D97C600D8808F /* PictMaker.app */,
+				1844659C1B2D97C600D8808F /* PictMakerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184465891B2D97C600D8808F /* PictMaker */ = {
+			isa = PBXGroup;
+			children = (
+				1844658C1B2D97C600D8808F /* AppDelegate.swift */,
+				1844658E1B2D97C600D8808F /* ViewController.swift */,
+				184465901B2D97C600D8808F /* Main.storyboard */,
+				184465931B2D97C600D8808F /* Images.xcassets */,
+				184465951B2D97C600D8808F /* LaunchScreen.xib */,
+				1844658A1B2D97C600D8808F /* Supporting Files */,
+				2F0AA1C51BBD9CB6003227A7 /* DrawViewController.xib */,
+				2F0AA1C71BBD9E2C003227A7 /* DrawViewController.swift */,
+			);
+			name = PictMaker;
+			path = StampMaker;
+			sourceTree = "<group>";
+		};
+		1844658A1B2D97C600D8808F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1844658B1B2D97C600D8808F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1844659F1B2D97C600D8808F /* PictMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				184465A21B2D97C600D8808F /* StampMakerTests.swift */,
+				184465A01B2D97C600D8808F /* Supporting Files */,
+			);
+			name = PictMakerTests;
+			path = StampMakerTests;
+			sourceTree = "<group>";
+		};
+		184465A01B2D97C600D8808F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				184465A11B2D97C600D8808F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		184465861B2D97C600D8808F /* PictMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184465A61B2D97C600D8808F /* Build configuration list for PBXNativeTarget "PictMaker" */;
+			buildPhases = (
+				184465831B2D97C600D8808F /* Sources */,
+				184465841B2D97C600D8808F /* Frameworks */,
+				184465851B2D97C600D8808F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PictMaker;
+			productName = StampMaker;
+			productReference = 184465871B2D97C600D8808F /* PictMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1844659B1B2D97C600D8808F /* PictMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184465A91B2D97C600D8808F /* Build configuration list for PBXNativeTarget "PictMakerTests" */;
+			buildPhases = (
+				184465981B2D97C600D8808F /* Sources */,
+				184465991B2D97C600D8808F /* Frameworks */,
+				1844659A1B2D97C600D8808F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1844659E1B2D97C600D8808F /* PBXTargetDependency */,
+			);
+			name = PictMakerTests;
+			productName = StampMakerTests;
+			productReference = 1844659C1B2D97C600D8808F /* PictMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1844657F1B2D97C600D8808F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "ヨシナリ カズヒサ";
+				TargetAttributes = {
+					184465861B2D97C600D8808F = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4BP69BFBJB;
+					};
+					1844659B1B2D97C600D8808F = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 184465861B2D97C600D8808F;
+					};
+				};
+			};
+			buildConfigurationList = 184465821B2D97C600D8808F /* Build configuration list for PBXProject "PictMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1844657E1B2D97C600D8808F;
+			productRefGroup = 184465881B2D97C600D8808F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184465861B2D97C600D8808F /* PictMaker */,
+				1844659B1B2D97C600D8808F /* PictMakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		184465851B2D97C600D8808F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0AA1C61BBD9CB6003227A7 /* DrawViewController.xib in Resources */,
+				184465921B2D97C600D8808F /* Main.storyboard in Resources */,
+				184465971B2D97C600D8808F /* LaunchScreen.xib in Resources */,
+				184465941B2D97C600D8808F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1844659A1B2D97C600D8808F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		184465831B2D97C600D8808F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0AA1C81BBD9E2C003227A7 /* DrawViewController.swift in Sources */,
+				1844658F1B2D97C600D8808F /* ViewController.swift in Sources */,
+				1844658D1B2D97C600D8808F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184465981B2D97C600D8808F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184465A31B2D97C600D8808F /* StampMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1844659E1B2D97C600D8808F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184465861B2D97C600D8808F /* PictMaker */;
+			targetProxy = 1844659D1B2D97C600D8808F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		184465901B2D97C600D8808F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184465911B2D97C600D8808F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184465951B2D97C600D8808F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184465961B2D97C600D8808F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		184465A41B2D97C600D8808F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		184465A51B2D97C600D8808F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		184465A71B2D97C600D8808F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StampMaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PictMaker;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		184465A81B2D97C600D8808F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StampMaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PictMaker;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		184465AA1B2D97C600D8808F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StampMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PictMakerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StampMaker.app/StampMaker";
+			};
+			name = Debug;
+		};
+		184465AB1B2D97C600D8808F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StampMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PictMakerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StampMaker.app/StampMaker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184465821B2D97C600D8808F /* Build configuration list for PBXProject "PictMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184465A41B2D97C600D8808F /* Debug */,
+				184465A51B2D97C600D8808F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184465A61B2D97C600D8808F /* Build configuration list for PBXNativeTarget "PictMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184465A71B2D97C600D8808F /* Debug */,
+				184465A81B2D97C600D8808F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184465A91B2D97C600D8808F /* Build configuration list for PBXNativeTarget "PictMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184465AA1B2D97C600D8808F /* Debug */,
+				184465AB1B2D97C600D8808F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1844657F1B2D97C600D8808F /* Project object */;
+}
