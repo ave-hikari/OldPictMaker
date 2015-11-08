@@ -10,25 +10,27 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Zz4-vW-c3U">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="applabel" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-MJ-Je2">
+                    <rect key="frame" x="51" y="126" width="313" height="80"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applabel" translatesAutoresizingMaskIntoConstraints="NO" id="2XF-cI-lCy">
-                    <rect key="frame" x="17" y="131" width="381" height="106"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="106" id="buA-Hs-aQe"/>
-                    </constraints>
-                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywn-oF-Xup">
+                    <rect key="frame" x="80" y="376" width="254" height="85"/>
+                    <string key="text">Thank you
+for your
+download!</string>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
+                    <color key="textColor" red="1" green="0.9862110744" blue="0.967287589" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.084780828789662963" green="0.12696833711090691" blue="0.26945233585858586" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Zz4-vW-c3U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1S0-Fh-5hk"/>
-                <constraint firstItem="2XF-cI-lCy" firstAttribute="centerX" secondItem="Zz4-vW-c3U" secondAttribute="centerX" id="54B-wn-cCH"/>
-                <constraint firstAttribute="bottom" secondItem="Zz4-vW-c3U" secondAttribute="bottom" id="7M5-Ee-TeZ"/>
-                <constraint firstItem="Zz4-vW-c3U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dQF-hA-lmd"/>
-                <constraint firstAttribute="trailing" secondItem="Zz4-vW-c3U" secondAttribute="trailing" id="o2g-UF-K9g"/>
-                <constraint firstItem="2XF-cI-lCy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="w9S-RW-voq"/>
-                <constraint firstItem="2XF-cI-lCy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="131" id="y6W-JO-U5b"/>
+                <constraint firstItem="v7m-MJ-Je2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="126" id="B2R-xk-coi"/>
+                <constraint firstAttribute="trailing" secondItem="Ywn-oF-Xup" secondAttribute="trailing" constant="80" id="R6z-tQ-cwN"/>
+                <constraint firstItem="Ywn-oF-Xup" firstAttribute="top" secondItem="v7m-MJ-Je2" secondAttribute="bottom" constant="170" id="hAJ-ve-PR2"/>
+                <constraint firstAttribute="trailing" secondItem="v7m-MJ-Je2" secondAttribute="trailing" constant="50" id="k45-jX-YFq"/>
+                <constraint firstItem="v7m-MJ-Je2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="51" id="m4G-r9-tix"/>
+                <constraint firstItem="Ywn-oF-Xup" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="80" id="wo3-U6-UBJ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -36,7 +38,6 @@
         </view>
     </objects>
     <resources>
-        <image name="applabel" width="330" height="90"/>
-        <image name="splash" width="590" height="905"/>
+        <image name="applabel" width="300" height="80"/>
     </resources>
 </document>

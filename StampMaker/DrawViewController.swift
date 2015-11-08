@@ -24,16 +24,17 @@ class DrawViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     
     @IBOutlet weak var labelColorPicker: UIPickerView!
     var pickColorArr: [ColorInfo] = [
-        ColorInfo(name: "white", color: UIColor.whiteColor()),
-        ColorInfo(name: "black", color: UIColor.blackColor()),
-        ColorInfo(name: "blue", color: UIColor.blueColor()),
-        ColorInfo(name: "orange", color: UIColor.redColor()),
-        ColorInfo(name: "pink", color: UIColor.blueColor()),
-        ColorInfo(name: "green", color: UIColor.greenColor()),
-        ColorInfo(name: "red", color: UIColor.redColor()),
-        ColorInfo(name: "navy", color: UIColor.blueColor()),
-        ColorInfo(name: "gray", color: UIColor.grayColor()),
-        ColorInfo(name: "yellow", color: UIColor.yellowColor())
+        ColorInfo(name: "white", color: AppUtility.colorWithHexString("ffffff")),
+        ColorInfo(name: "black", color: AppUtility.colorWithHexString("000000")),
+        ColorInfo(name: "dodger blue", color: AppUtility.colorWithHexString("1E90FF")),
+        ColorInfo(name: "coral orange", color: AppUtility.colorWithHexString("ff7f50")),
+        ColorInfo(name: "deep pink", color: AppUtility.colorWithHexString("FF1493")),
+        ColorInfo(name: "salmon pink", color: AppUtility.colorWithHexString("FA8072")),
+        ColorInfo(name: "medium seagreen", color: AppUtility.colorWithHexString("3CB371")),
+        ColorInfo(name: "crimson red", color: AppUtility.colorWithHexString("DC143C")),
+        ColorInfo(name: "navy", color: AppUtility.colorWithHexString("000080")),
+        ColorInfo(name: "dark gray", color: AppUtility.colorWithHexString("a9a9a9")),
+        ColorInfo(name: "gold", color: AppUtility.colorWithHexString("ffd700"))
     ]
     var tempColor: UIColor!
     
@@ -47,6 +48,8 @@ class DrawViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         labelColorPicker.delegate = self
         labelColorPicker.dataSource = self
         self.view.addSubview(labelColorPicker)
+        
+        labelColorPicker.hidden = true
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -66,25 +69,20 @@ class DrawViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK:IBAction
-    
-    @IBAction func tapLibBtn(sender: AnyObject) {
-        println(__FUNCTION__)
-        self.pickImageFromLibrary()
-    }
     
     @IBAction func tapAddTextBtn(sender: AnyObject) {
         println(__FUNCTION__)
         
         //ラベルが画面上にすでに載せられている場合
         if (self.stampLabel != nil) {
-            setText.setTitle("のせる", forState: UIControlState.Normal)
+            setText.setTitle("paste", forState: UIControlState.Normal)
             let tempImage = self.drawText(mainImage.image!, addText: addText.text)
             mainImage.image = tempImage
             self.stampLabel.removeFromSuperview()
             self.stampLabel = nil
             //何度もラベルを画像に貼れるように画像にラベルをセットし終わったらtextFieldを空にする
             addText.text = nil
+            labelColorPicker.hidden = true
             
         } else {
             self.stampLabel = UILabel(frame: CGRectMake(50, 50, 120, 20));
@@ -92,11 +90,13 @@ class DrawViewController: UIViewController,UIImagePickerControllerDelegate,UINav
             self.stampLabel.textColor = UIColor.whiteColor()
             self.stampLabel.backgroundColor = UIColor.clearColor()
             self.mainImage.addSubview(stampLabel)
-            setText.setTitle("画像にラベル保存", forState: UIControlState.Normal)
+            setText.setTitle("set", forState: UIControlState.Normal)
+            
+            labelColorPicker.hidden = false
         }
     }
     
-    //保存ボタンを押す
+    //保存ボタンをタップするとライブラリに保存し、確認アラートを表示する
     func tappedSaveButton(sender: UIButton) {
         println(__FUNCTION__)
         UIImageWriteToSavedPhotosAlbum(mainImage.image, nil, nil, nil)
@@ -115,29 +115,6 @@ class DrawViewController: UIViewController,UIImagePickerControllerDelegate,UINav
                 })
             })
         })
-    }
-    
-    // ライブラリから写真を選択する
-    func pickImageFromLibrary() {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
-            let controller = UIImagePickerController()
-            controller.delegate = self
-            //ライブラリから選択後、正方形にトリミングする
-            controller.allowsEditing = true
-            controller.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-            self.presentViewController(controller, animated: true, completion: nil)
-        }
-    }
-    
-    // 写真を選択した時に呼ばれる
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        //選択時トリミングした画像を使用する
-        if info[UIImagePickerControllerEditedImage] != nil {
-            let image = info[UIImagePickerControllerEditedImage] as! UIImage
-            mainImage.image = image
-            println(image)
-        }
-        picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
     //表示列
@@ -188,7 +165,6 @@ extension DrawViewController {
             NSForegroundColorAttributeName: tempColor,
             NSParagraphStyleAttributeName: textStyle
         ]
-        //varの中には何度も入れなおせるが、letには一度きりしか値を入れられない
         addText.drawInRect(textRect, withAttributes: textFontAttributes)
         //コンテキストをイメージとして生成する
         self.newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -196,22 +172,6 @@ extension DrawViewController {
         UIGraphicsEndImageContext()
         
         return self.newImage
-    }
-    
-    //TODO: 修正中
-    //ピッカーの選択したカラーネームに合わせて色を選択する
-    func getDrawColor(colorName: String) -> UIColor{
-        let textColor: UIColor!
-        if(colorName == "white"){
-            textColor = UIColor.whiteColor()
-        }else if(colorName == "black"){
-            textColor = UIColor.blackColor()
-        }else if(colorName == "blue"){
-            textColor = UIColor(red: 65, green: 105, blue: 225, alpha: 1.0)
-        }else{
-            textColor = UIColor.blueColor()
-        }
-        return textColor
     }
     
     //ドラッグしたときによばれる

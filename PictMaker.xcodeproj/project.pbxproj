@@ -15,6 +15,7 @@
 		184465A31B2D97C600D8808F /* StampMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184465A21B2D97C600D8808F /* StampMakerTests.swift */; };
 		2F0AA1C61BBD9CB6003227A7 /* DrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AA1C51BBD9CB6003227A7 /* DrawViewController.xib */; };
 		2F0AA1C81BBD9E2C003227A7 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0AA1C71BBD9E2C003227A7 /* DrawViewController.swift */; };
+		2F956E3B1BCA48AA0029F824 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F956E3A1BCA48AA0029F824 /* AppUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		184465A21B2D97C600D8808F /* StampMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampMakerTests.swift; sourceTree = "<group>"; };
 		2F0AA1C51BBD9CB6003227A7 /* DrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawViewController.xib; sourceTree = "<group>"; };
 		2F0AA1C71BBD9E2C003227A7 /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		2F956E3A1BCA48AA0029F824 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				1844658A1B2D97C600D8808F /* Supporting Files */,
 				2F0AA1C51BBD9CB6003227A7 /* DrawViewController.xib */,
 				2F0AA1C71BBD9E2C003227A7 /* DrawViewController.swift */,
+				2F956E3A1BCA48AA0029F824 /* AppUtility.swift */,
 			);
 			name = PictMaker;
 			path = StampMaker;
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F956E3B1BCA48AA0029F824 /* AppUtility.swift in Sources */,
 				2F0AA1C81BBD9E2C003227A7 /* DrawViewController.swift in Sources */,
 				1844658F1B2D97C600D8808F /* ViewController.swift in Sources */,
 				1844658D1B2D97C600D8808F /* AppDelegate.swift in Sources */,
@@ -302,9 +306,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b92b709a-458d-4d03-88f2-140b05cce7a0";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -327,7 +332,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KAZUHISA YOSHINARI (4BP69BFBJB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KAZUHISA YOSHINARI (4BP69BFBJB)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -340,8 +346,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b92b709a-458d-4d03-88f2-140b05cce7a0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

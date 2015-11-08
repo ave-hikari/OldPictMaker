@@ -20,10 +20,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         self.navigationController?.navigationBarHidden = true
     }
     
-    // MARK:IBAction
+    // ライブラリボタンをタップ
     @IBAction func tapLibraryButton(sender: AnyObject) {
-        println(__FUNCTION__)
-        
+        //イメージを取ってくるのをライブラリと指定する
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
             let controller = UIImagePickerController()
             controller.delegate = self
@@ -34,6 +33,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         }
     }
     
+    // カメラボタンをタップするとカメラを起動させる
     @IBAction func tapCameraButton(sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
             let controller = UIImagePickerController()
@@ -48,7 +48,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     // 写真を選択した時に呼ばれる
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
-        // 遷移するViewを定義する.
+        // 遷移するViewを定義
         let drawViewController:DrawViewController = DrawViewController(nibName: "DrawViewController", bundle: NSBundle.mainBundle())
         //選択時トリミングした画像を使用する
         if info[UIImagePickerControllerEditedImage] != nil {
